@@ -17,7 +17,7 @@ html{
     
 }
 body{
-    background: #ffff;
+    background:;
     overflow-x: hidden;
     font-family: 'Red Hat Text', sans-serif;
 }
@@ -361,6 +361,7 @@ body{
      }
      .recomendaciones .recom_box .recom_img img{
         margin: 2.5px auto;
+        width: 300px;
      }
      .recomendaciones .recom_box .screenshot_whatsapp img{
         max-width: 350px;
