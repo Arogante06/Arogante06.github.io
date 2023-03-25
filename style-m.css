@@ -264,6 +264,7 @@ body{
 }
 .complement_gen img{
     width: 25vw;
+    margin: 5px 0;
     
 }
 .complement_gen div{
@@ -494,7 +495,7 @@ body{
 
 @media only screen and (max-width:900px){
     .logo-box > .doble{
-         display: flex;
+        display: flex;
         position: absolute;
         right: 10px;
         top: 15px;
@@ -505,22 +506,25 @@ body{
         flex-direction: row;
     } 
     .logo-box > .doble .phone{
+        display: flex;
         font-size: 1.2rem;
        margin-right: 10px;
        text-decoration: none;
        color: var(--red);
        font-weight: 600;
+       width: 200px;
     }
-    .logo-box > .doble .phone .icon{
+    .logo-box  .doble .phone .icon{
         width: 20px;
         position: relative;
-        top: 5px;
+        top: 2px;
+        
     }
     
 
     .btn-menu > .fa-bars{
-        display: block;
-        position:;
+        display: none;
+        position: ;
         right: 0px;
         top: 0px;
         font-size: 28px;
@@ -661,19 +665,21 @@ body{
 }
 .cont-1{
     background: var(--red);
-    width: 22vw;
+    width: 23%;
     color: var(--white);
     padding: 1em;
+
 }
 
 .cont-1 span{
-    font-size: 2vw;
+    font-size: 3rem;
 }
 
 #days, #mins, #hours, #seconds, #dayss, #minss, #hourss, #secondss{
     color: var(--white);
-    font-size: 10vw;
+    font-size: 7rem;
 }
+
 
 /** Acerca de Nosotros **/
 .acerca-de{
@@ -821,10 +827,10 @@ body{
 @media only screen and (max-width:650px){
     .info-container h1{font-size: 30px;}
     .info-container p{font-size: ;}
-    .container1{height: 120px; width: 95vw;}
+    .container1{height: 130px; width: 95vw;}
     .container1 .cont-1 #dayss, #hourss, #minss, #secondss, #days, #hours ,#mins ,#seconds{font-size:3.9rem;}
-    .container1 .cont-1 span{font-size: 3.8vw; padding-bottom: 20px;}
-    .container1 .cont-1 { padding: 0; margin: 0 2.5px; height: 100%; width: 100%; }
+    .container1 .cont-1 span{font-size: 4vw; padding-bottom: 20px;}
+    .container1 .cont-1 { padding: 0; margin: 0 2.5px; height: 100%; width: 100%; box-sizing:border-box; }
 }
 
 /** Nuestros proyectos **/

@@ -3,7 +3,7 @@ const hourss = document.getElementById("hourss");
 const minss = document.getElementById("minss");
 const secondss = document.getElementById("secondss");
 
-const mewYear = '24 March 2023';
+const mewYear = '30 March 2023';
 
 function countTimer(){
     const mewYearDate = new Date(mewYear);
