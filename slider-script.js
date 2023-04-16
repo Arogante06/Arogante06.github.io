@@ -6,7 +6,15 @@ mediaQuery.addListener((mq) => {
   if (mq.matches) {
    
 
-	const slider = document.querySelector('#slider');
+	
+
+
+	  
+	}
+});
+  });
+
+  const slider = document.querySelector('#slider');
 	let sliderSection = document.querySelectorAll('.slider__section');
 	let sliderSectionLast = sliderSection[sliderSection.length -1];
 	
@@ -48,11 +56,5 @@ mediaQuery.addListener((mq) => {
 	setInterval(function(){
 		Next();
 	},10000)
-
-
-	  
-	}
-});
-  });
 
   
