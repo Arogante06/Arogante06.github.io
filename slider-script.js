@@ -1,5 +1,5 @@
 
-document.addEventListener("DOMContentLoaded", function() {
+
 	const mediaQuery = window.matchMedia('(max-width: 767px)');
 
 mediaQuery.addListener((mq) => {
@@ -12,9 +12,7 @@ mediaQuery.addListener((mq) => {
 	  
 	}
 });
-  });
-
-  const slider = document.querySelector('#slider');
+const slider = document.querySelector('#slider');
 	let sliderSection = document.querySelectorAll('.slider__section');
 	let sliderSectionLast = sliderSection[sliderSection.length -1];
 	
@@ -56,5 +54,6 @@ mediaQuery.addListener((mq) => {
 	setInterval(function(){
 		Next();
 	},10000)
+
 
   

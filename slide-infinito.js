@@ -40,7 +40,7 @@ function Prev1(){
 
 setInterval(function(){
 	Next1();
-},5000);
+},1000);
 
 // const stop =()  =>{
 //     clearInterval(intervalo);

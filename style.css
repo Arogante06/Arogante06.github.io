@@ -1,10 +1,12 @@
                 /* PARA LOS MEDIA DE --------------------------- */
 @media only screen and (max-width:768px){
-
+body{}
 
     *{text-decoration: none;font-family: 'Poppins', sans-serif;letter-spacing: 0;}
     /* PARA EL BOTON DE LLAMADA A WHATSAPP */
     .cont-what{position: fixed;width: 70px;height: 70px;z-index: 40;top: 90%;}
+    .cont-what a{fill: #0de611bd}
+                  .cont-what :hover{fill: #00fa04 ;}
     
     /* MENU GENERAL MIN Y SU MAX YA HECHO */
     .head-contain{width: 100%;}
@@ -89,7 +91,7 @@
     text-align: center; 
   
   }
-  .slider__section{
+  .slider__section{height: fit-content;
   width: 100%;
   }
   .slide-img{display: block;width: 100%;height: 100%;object-fit: cover;  
@@ -119,7 +121,7 @@
         }
         .div-content .content .contenido{padding: 20px;background: #2229;color: #fff;letter-spacing: 2px;}
         .container-img .presentation{
-            font-size: 2rem;margin: 0;color: #fff;text-align: center;height: 60%; font-weight: 900;  }
+            font-size: 1.6rem;margin: 0;color: #fff;text-align: center;height: 60%; font-weight: 900;  }
         .container-img .div-content div {
             display: flex;justify-content: center;align-items: center;margin:40px 0 ;font-weight: 800;
         }
@@ -135,7 +137,7 @@
     .about-cont .about-item{display: flex;flex-direction: column;justify-content: center;align-items: center;gap: 1em;
     text-align: center;}
     .about-item a{background: #37c8f5;padding: 7px 8px;width: 120px;border-radius: 20px;}
-    .about-cont h3{width: 100%;background: #37c8f5;padding: 20px 0;}
+    .about-cont h3{width: 100%;background: #1daad4;padding: 20px 0;color: #fff;}
 /********************PARTE2****************/
 .p2-1-1{text-align: center;}
 .p2 .p2-1{display: grid;grid-template-rows:auto 1fr ;}
@@ -170,8 +172,8 @@
   .slide{ width: 90%; max-width: 1200px; height: 400px;margin: 40px auto;overflow: hidden;   
     box-shadow: 0 0 0 10px #fff,0 15px 50px;position: relative;}
   .slide-items{ display: flex;border: rgba(53, 5, 2, 0.5) 5px solid;flex-direction: row ; 
-    width: 700%;height: 400px;margin-left: -200%;text-align: center; padding: 40px 0;}
-  .slide-items .item{ width: 100%;overflow: hidden;padding: 1em;}
+    width: 700%;height: 400px;margin-left: -200%;text-align: center; padding: 10px 0;}
+  .slide-items .item{ width: 100%;padding: 1em 0;}
   .slide-items .item img{ display: block; width: 100%;height: 91%; object-fit: cover;
    }
   .item:hover { transform: scale(1.1);transition: all 0.5s;}
@@ -189,19 +191,18 @@
     .cont-form{height: 90%;text-align: center;width: 100%;}
     .cont-form h4{margin: 20px 15px 5px 15px;font-size: 1.4rem;}
     .cont-form .form{display:grid;grid-template-rows: auto ;justify-content: center;text-align: center;
-        font-family: 'Poppins', sans-serif;}
+        font-family: 'Poppins', sans-serif;padding-bottom: 1em;}
     .form input{width: 100%; background: #eee;padding: 10px;margin-top: 20px;border: none;
     font-size: 1.2rem;box-sizing: border-box;}
     .form .message {background: #eee;padding:10px ;height: 200px;overflow-y: hidden;margin: 20px 0;
     border: none;font-size: 1.2rem;}
     .form button{width: 300px;border: #222 5px solid;padding:15px 10px ;cursor: pointer;}
-                            .form button :hover{background: red;}
+                  .form .button:hover{border: rgb(1, 22, 8, 0) 4px solid;transform:scale(90%);background: #000000; color: #fff;font-weight: bold;transition: .7s;outline: none;}
 
 /* PARA EL FOOTER MAIN */
-footer{margin-top: 1EM;}
-.footer-items .foo-item{background: #222;text-align: center;display: flex;justify-content: center;}
-.foo-item a {width: 50px;object-fit: contain;margin: 4px 15px;}
-.foo-item img{width: 50px;}
+footer{}
+.footer-items .foo-item{background: #0e1d00;text-align: center;display: flex;justify-content: center;}
+.foo-item a svg{width: 50px;object-fit: contain;margin: 4px 15px;fill: #fff;}
 .footer-items .foo-item-copy{text-align: center;margin: 10px 0;}
 
 
@@ -396,18 +397,25 @@ footer{margin-top: 1EM;}
 
 
           /* CONTACTANOS */
-.apartado-contact {display: grid;grid-template-columns: 2fr 3fr;width: 100%;align-items: center;justify-items: center;padding: 1em;background-color: #e5e5f7;
-  opacity: 0.8;
-  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 800px ), repeating-linear-gradient( #444cf755, #444cf7 );} 
+.apartado-contact {display: grid;grid-template-columns: 2fr 3fr;width: 100%;align-items: center;justify-items: center;padding: 1em;} 
 .apartado-contact .horario{display: grid;grid-template-rows: 5fr 2fr 2fr 2fr;justify-items: center;gap: 1em;}
+.apartado-contact .horario h4{text-align: center;}
 .apartado-contact .horario div{display: flex;height: 1.2em;}
 .apartado-contact .horario div .bx {width: 25px;height: ;}
-.container-contact .fondo {position: relative;}
-.container-contact .fondo .fondo-contact{position: relative;width: 100%;height: 60vh;object-fit: cover;}
-.container-contact .fondo .cont{position: absolute;background: #042c3f55;width: 100%;text-align: center;padding: 5% 0;top: 50%;font-weight: 800;font-size: 2.6rem;color: #ffffffc0;}
-        .container-contact .fondo .cont strong :hover{transform: scale(1.2);transition: .5s;}
+.container-contact .fondo {position: relative;height: 60vh;}
+.container-contact .fondo .fondo-contact{position: relative;width: 100%;height: 100%;object-fit: cover;}
+.container-contact .fondo .cont{position: absolute;background: #042c3f55;width: 100%;text-align: center;padding: 5% 0;top: 50%;font-weight: 800;font-size: 2.6rem;color: #ffffff;}
+.container-contact .fondo .cont h4{display: inline-block;}
+        .container-contact .fondo .cont strong :hover{transform: scale(1.2);transition: .5s;max-width: 100vw;}
+.cont-inf{background: #031b1b;padding: 1em;color: #fff;}
+.cont-inf h4{text-align: center;letter-spacing: 2px;}
+.cont-inf ul{padding: 1em ;}
+.cont-inf ul li{padding: 1em;letter-spacing: 1px;}
+.cont-inf ul li a{text-decoration: underline;color: #7dd7f3;}
 @media only screen and (max-width:760px){
-  .apartado-contact .horario {row-gap: 2em;align-content: center;}  
+  .apartado-contact .horario {row-gap: 2em;align-content: center;}
+  .container-contact .fondo .fondo-contact{} 
+  .container-contact .fondo .cont{font-size: 1.9rem;} 
 }
 @media only screen and (max-width:540px){
   .apartado-contact{grid-template-columns: 1fr;}
@@ -428,19 +436,65 @@ footer{margin-top: 1EM;}
 .item-blog div a button{border:none ;background: transparent;border-bottom: #000 1px solid;padding: 2px;margin: .2em;}
 
 .blog-inf{background: #031b1b;color: #fff;text-align: center;padding: 2em;}
-.blog-inf p{padding: 1em 0;}
+.blog-inf p{padding: 1em 0;letter-spacing: 1px;line-height: ;}
+.blog-inf h4{letter-spacing: 2px;line-height: 1.4;color: #7dd7f3;}
 @media only screen and (max-width:680px){
-  .container-blog{display: grid;grid-template-columns: 1fr;gap: 3em;padding: 3em;justify-items: center;}
+.container-blog{display: grid;grid-template-columns: 1fr;gap: 3em;padding: 1em;justify-items: center;}
+.item-blog .blog .blog-img{height: 200px;width: 100%;object-fit: cover;}
   
 }
 
           /*NOSOTROS */
+.container-fondo-universe{background-image: url(fondo-nosotros-decoration3.webp);padding-bottom: 1em;background-position: 50%;background-attachment: fixed;}
+.container-fondo-universe .form input{background: #222a;color: #fff;}
+.container-fondo-universe .form input::placeholder{color: #fff;}
+.container-fondo-universe .form textarea{background: #222a;color: #fff;}
+.container-fondo-universe .form textarea::placeholder{color: #fff;}
+.container-fondo-universe .nosotros-cont{background: #fff0;-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px)}
+.container-fondo-universe  .nosotros-cont p{letter-spacing: .5px;font-weight: 900;}
 .nosotros-fondo{width: 100%;background: red;height: 60vh;position: relative;}
 .nosotros-fondo img{width: 100%;object-fit: cover;height: 100%;image-orientation: 50grad;}
-.nosotros-fondo div{position: absolute;transform: translateX(50%);right: 50%;top: 50%;background: #031b1b77;width: 100%;padding: 2em 0;text-align: center;color: #fff;font-size: 1.2rem;}
+.nosotros-fondo div h4{position: absolute;transform: translateX(50%);right: 50%;top: 50%;background: #031b1b77;width: 100%;padding: 2em 0;text-align: center;color: #fff;font-size: 2rem;letter-spacing: 5px;}
 
 .nosotros-inf{background: #031b1b;color: #fff;text-align: center;padding: 2em;}
-.nosotros-inf h4{padding-bottom: 1em;}
+.nosotros-inf h4{padding-bottom: 1em;letter-spacing: 2px;}
+.nosotros-inf p{letter-spacing: 1px;}
+.nosotros-inf p strong{color: #5cc8e9}
+
+.container-fondo-universe .cont-form h4{ background: rgba(8, 71, 47, 0.822);color: #fff;padding: 0.5em;}
+
+@media only screen and (max-width:768px){
+.nosotros-cont {padding: 1em;color: #000;font-weight: 900;}
+.nosotros-cont .valor{letter-spacing: 2px;}
+.nosotros-cont ul  {padding: 1em;}
+.nosotros-cont ul li{padding-top: 1em;letter-spacing: 1px;}
+.nosotros-cont .questions .subtitle{background: #031b1b77;text-align: center;padding: 1em 0;color: #fff;letter-spacing: 2px;}
+.nosotros-cont .questions .question{margin-top: 1em;padding: 1em;background: #0e1d0099;text-align: center;}
+.questions .question p{color: #7dd7f3;letter-spacing: 1px;}
+.questions .question p a{text-decoration: underline;color: #00fa04;letter-spacing: 1px;}
+.questions .question h4{color: #fff;letter-spacing: 2px;}
+}
+/* SERVICIOS */
+@media screen and (max-width: 780px){
+  .servicios-fondo{position:relative ;height: 60vh;text-align: center;}
+.servicios-fondo img{height: 100%;object-fit: cover;}
+.servicios-fondo div{position: absolute;width: 100%;background: #0e1d00cc;top:50% ;color: #fff;font-size: 2rem;padding: 1.5em;box-shadow: #fff 0 2px 20px 9px;}
+.servicios-fondo div h4{letter-spacing: .2em;font-weight: bolder ;text-decoration: underline 3px;}
+.servicios-inf{padding: 1em;background: #0e1d00;color: #fff;text-align: center;}
+.servicios-inf h4{padding: 1em 0;letter-spacing: 2px;}
+.servicios-inf p{letter-spacing: 1px;padding: 1em;}
+.servicios-inf p strong{color: #7dd7f3;letter-spacing: 1px;}
+
+.container-fondo-servicios{}
+.container-fondo-servicios .servicios-cont{display: grid;grid-template-rows: 1fr;gap: 1em;}
+.servicios-cont div{padding: .5em;}
+.servicios-cont div div{display: flex;flex-direction: column;align-items: center;row-gap: .5em;}
+.servicios-cont div div a button{border: transparent;padding: .6em 1.2em;border-radius: 15px;background: #fff;border: 2px #0e1d00 solid;font-family: 900;}
+.servicios-cont div div a button:hover{background: #0e1d00;color: #fff;transition: .5s;}       
+.servicios-cont div img{height: 200px;width: 100%;object-fit: cover;}
+  
+}
+
      
 
 
