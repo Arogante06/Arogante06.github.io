@@ -37,21 +37,20 @@ function Prev1(){
 // btnLeft1.addEventListener('click', function(){
 // 	Prev1();
 // })
-
-setInterval(function(){
+  const intervalo = setInterval(function (){
 	Next1();
-},1000);
+},1500);
 
 // const stop =()  =>{
 //     clearInterval(intervalo);
 // };
 
-// slide.addEventListener('mouseover', () =>{
-//     stop();
-// })
+slide.addEventListener('mouseover', () =>{
+    clearInterval(intervalo)
+})
 
 // slide.addEventListener('mouseout', () =>{
-//     start();
+
 // })
 
 // start();

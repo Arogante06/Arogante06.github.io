@@ -224,13 +224,13 @@ body{
     opacity: 1;
     transition: opacity 1.2s ease-in-out;
 }
-
-.testimony__img{
-    width: 750px;
-    height: 500px;
+.testimony__picture{
+    height:210px ;width: 100%;overflow: hidden;
     border-radius: 20px;
     object-fit: cover;
-    object-position: 50% 30%;
+    object-position:  }
+.testimony__img{
+overflow: hidden; width: 86vw;z-index: 0;width: 100%;
 }
 
 .testimony__texts{
@@ -269,7 +269,7 @@ body{
 }
 .complement_gen img{
     width: 25vw;
-    margin: 5px 0;
+    margin: 5px 0;border-radius: 50%;width: 280px;height: 280px;object-fit: cover;box-shadow: #000000 -5px 3px 5px;
     
 }
 .complement_gen div{
@@ -287,7 +287,7 @@ body{
     margin: 0;
     width: 100vw;
     height: 100px;
-    padding:35px;
+    padding:1em;
    
 }
 .complement p{
@@ -322,7 +322,7 @@ body{
 
 }
 .recomendaciones .resumen{
-    background: #2F2C55;
+    background:#22303a;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -337,6 +337,7 @@ body{
     text-align: left;
     margin: 15px 2rem;
 }
+.resumen_box .gifts p{padding: .5em;letter-spacing: 1px;}
 .recomendaciones .recom_box{
     display: flex;
     flex-direction: column;
@@ -362,18 +363,18 @@ body{
     .recomendaciones .recom_box .recom_img {
     display: flex;
     flex-direction: column;
-    column-gap: 10px;
-    width: 80vw;
+    column-gap:1em ;
+    width: 100%;padding: 1em;row-gap: 1em;
      }
      .recomendaciones .recom_box .recom_img img{
-        margin: 2.5px auto;
-        width: 100%;
+       height: 125px;
+        width: 100%;object-fit: cover;
      }
      .recomendaciones .recom_box .screenshot_whatsapp img{
         max-width: 350px;
-        width: 80%;
+        width: 70%;
         max-height: 450px;
-        height: 90%;
+        height: 100%;object-fit: cover;
 
         }
     .recomendaciones .recom_box  .title{
@@ -445,7 +446,7 @@ body{
     left: 0;
     width: 100vw;
     height: 60px;
-    background: #fff;;
+    background: #fff3;backdrop-filter: blur(20px);-webkit-backdrop-filter: blur(50px);
 
     display: flex;
     justify-content: space-between;
@@ -585,10 +586,10 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
-    background:url(im2.png);
+    background:url(fondo-landing3.webp);
     background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    background-position:center ;
+    background-size:cover;
     z-index: ;
     
 }
@@ -598,7 +599,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.1);
 
     display: flex;
     justify-content: center;
@@ -607,28 +608,28 @@ body{
 }
 .img-header .welcome h1{
     font-size: 50px;
-    color:#fff;
+    color:#fff;letter-spacing: 1px;
     font-weight: 200;
-    text-align: center;
+    text-align: center;background: rgba(0, 0, 0, 0);backdrop-filter: blur(3px);width: 95%;border-radius: 10px;padding: .5em;box-shadow: 0 8px 32px 0 rgba(247, 247, 247, 0.295);text-shadow: #000 0 5px 5px;
 }
 .img-header .welcome .m2{
     font-size: 3em;
     color:#3eccea;
     margin-top: 20px;
-    text-shadow: #3eccea 1px 1px 10px ;
+    text-shadow: #000 0px 5px 5px ;
 }
 .img-header .welcome hr{
     width: 400px;
     height: 2px;
-    background: #fff;
+    background: #0b1029;
     border: none;
     margin-top: 5px;
 }
 .img-header .welcome p{
-    font-size: 2em;
+    font-size: 2em;font-weight: bolder;letter-spacing: 2px;
     font-weight: 500;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 20px;text-shadow: #0b1029 0px 5px 3px ;
 }
 
 .img-header .welcome > button{
@@ -669,10 +670,10 @@ body{
     
 }
 .cont-1{
-    background: var(--red);
+    background: rgb(248, 161, 0);
     width: 23%;
     color: var(--white);
-    padding: 1em;
+    padding: 1em;border-radius:  10px;backdrop-filter: 10px;overflow: hidden;
 
 }
 
@@ -697,30 +698,25 @@ body{
 .acerca-text > .acerca > p{
     font-weight: 200;
 }
-.acerca-de .acerca-text h2{
-    font-size: 1.8rem;
+.acerca-de .acerca-text h2{;letter-spacing: 1px;
+    font-size: 1.3rem;
     text-align: center;
     padding: 1em;
     color: var(--blue);
-    text-shadow: black 0 0 2px;
+    text-shadow: ;
 }
 .acerca-de .acerca-text h3{
-    font-size: 1.6rem;
-    background: #D8F5F1;
-    text-align: center;   
-     margin: 0 auto;
-    width: 90vw;
-    align-items: center;
-    height: 25%;
-    padding: 2%;
-    color: var(--blue);
-    text-shadow: var(--blue) 0 0 2px;
+    font-size: 1.2rem;letter-spacing: 1px;
+    background: #D8F5F1;text-align: center;   
+margin: 0 auto;width: 100%;align-items: center;
+   padding: 1em;color: var(--blue); border-radius: 10px;
 }
 /************RESPONSIVE acerca-text****************/
 @media only screen and (max-width: 650px){
        .acerca-text{}
        .acerca-text h2, h3{font-size: 1.2rem;} 
-       .acerca-text .acerca_pa p{font-size: 1.0em; margin: ;}  
+       .acerca_pa{padding: 1em;}
+       .acerca-text .acerca_pa p{font-size: 1.0em; padding-bottom:1em ;}  
 }
 /**********************/
 .info-container{
@@ -759,7 +755,6 @@ body{
     justify-content: right;
 }
 .acerca-de .Elporque .Inf{
-    margin:1em;
     position: relative;
     display: flex;   
     background: #DAF7EC;
@@ -775,17 +770,15 @@ body{
 .acerca-de .Elporque .Inf h2{
     color: var(--red);
     text-align: left;
-    margin: 5px 0;
+    margin: 5px 0;font-weight: 900;letter-spacing: 1px ;border-radius: 10px;text-decoration: underline;}
 
-}
+
 .acerca-de .Elporque .Inf div p{
     font-size: 1rem;
     text-align: left; 
-    font-weight: 600;  
-    font
+    font-weight: 600;padding-bottom: 1em; letter-spacing: 1px;display: flex;     
 }
-.acerca-de .Elporque .Inf div{
-    margin: 1.5em;
+.acerca-de .Elporque .Inf div{ padding: .5em;  
 }
 
 /****  MEDIA PARA EL PORQUE CONTRATARNOS*****/
@@ -794,13 +787,12 @@ body{
         background-image:none ; height: fit-content;
     }
     .acerca-de .Elporque .Inf{
-    margin: 0 auto ;
+width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #DAF7EC;
-    width:90vw;
     opacity: 0.9;
     font-size: 2rem;
     padding: 6px;
@@ -839,7 +831,7 @@ body{
     position: relative;
     width: 100%;
     height: 100%; 
-    background: url(../img/img-2.jpg);
+    background: url();
     background-attachment:fixed;
     background-position: center;
     background-size: cover;
@@ -859,16 +851,14 @@ body{
     height: 100%;
 }
 .our-projects .container-project{
-    width: 90%;
     margin:auto;
-    padding: 30px;
 }
 .our-projects .container-project .project-title{
     border:2px solid #fff;
     padding:10px;
     text-align: center;
-    width: 50%;
-    margin: auto;
+  
+   
 }
 .our-projects .container-project .project-title h2{
     font-size: 40px;
@@ -924,7 +914,7 @@ body{
     .testimony__body{
         grid-template-columns: 1fr;
         grid-template-rows: max-content max-content;
-        gap: 3em;
+        gap: 1.5em;
         justify-items:center ;
     }
     .testimony__img{
@@ -1069,13 +1059,13 @@ body{
     display: flex;
     justify-content: center;
 }
-.footer .formulario-content #formulario button{
+.footer .formulario-content #formulario .send button{
     width: 120px;
     height: 40px;
     text-align: center;
     line-height: 40px;
     font-size: 20px;
-    background: var(--red);
+    background: ;
     border: none;
     outline: none;
     border-radius: 20px;
@@ -1084,7 +1074,7 @@ body{
     transition: 0.5s;
 }
 .footer .formulario-content #formulario button:hover{
-    background: var(--blue);
+    
 }
 .footer .formulario-content #formulario .mensaje-form{
     width: 100%;
@@ -1147,7 +1137,7 @@ body{
     .testimony{ --padding-container: 60px 0;}
     .testimony__container{ grid-template-columns: 28px 1fr 28px; gap: .9em;}
     .testimony__arrow{width: 100%;}
-    .testimony__course{margin-top: 15px;}
+    .testimony__course{}
     .footer-text .contactos{ flex-direction: column;}
      .footer-text .copy{font-size: 1rem;}
 }

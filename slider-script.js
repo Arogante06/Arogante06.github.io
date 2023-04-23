@@ -1,18 +1,8 @@
 
 
-	const mediaQuery = window.matchMedia('(max-width: 767px)');
-
-mediaQuery.addListener((mq) => {
-  if (mq.matches) {
-   
-
-	
-
-
-	  
-	}
-});
-const slider = document.querySelector('#slider');
+if (window.innerWidth <= 768) {
+	// código a ejecutar si la pantalla es de 768 píxeles o menos de ancho
+	const slider = document.querySelector('#slider');
 	let sliderSection = document.querySelectorAll('.slider__section');
 	let sliderSectionLast = sliderSection[sliderSection.length -1];
 	
@@ -54,6 +44,12 @@ const slider = document.querySelector('#slider');
 	setInterval(function(){
 		Next();
 	},10000)
+
+	console.log("La pantalla es pequeña");
+  } else {
+	// código a ejecutar si la pantalla es mayor a 768 píxeles de ancho
+	console.log("La pantalla es grande");
+  }
 
 
   

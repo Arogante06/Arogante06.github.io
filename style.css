@@ -168,9 +168,9 @@ body{}
   /* PARA EL SLIDE INFINITO */
   article{}
   article h4{text-align: center;margin:10px;font-size: 1.4rem;}
-  .slide{ width: 90%; max-width: 1200px; height: 400px;margin: 40px auto;overflow: hidden;   
+  .slide{ width: 90%; max-width: 1200px; height: 400px;margin: 40px auto;overflow:hidden ;   
     box-shadow: 0 0 0 10px #fff,0 15px 50px;position: relative;}
-  .slide-items{ display: flex;border: rgba(53, 5, 2, 0.5) 5px solid;flex-direction: row ; 
+  .slide-items{ display: flex;border: rgba(0, 0, 0, 0.815) 5px solid;flex-direction: row ; 
     width: 700%;height: 400px;margin-left: -200%;text-align: center; padding: 10px 0;}
   .slide-items .item{ width: 100%;padding: 1em 0;}
   .slide-items .item img{ display: block; width: 100%;height: 91%; object-fit: cover;
@@ -231,7 +231,7 @@ footer{}
         .header{width:100%;background-color: #161616;padding: 0.1em;display: flex;
             flex-flow: row wrap;justify-content: space-between;align-items: center;
             color:white; }
-          .header .a .logo{width: 130px;object-fit: cover;}
+          .header .a .logo{width: 130px;object-fit: cover;margin-left: .5em;}
           .header .a{}
           .header .llamada{background:none;border: none;}
                                 .header .llamada :hover{background: #2dafe2;border-radius: 15px;padding: 2px 8px;}
@@ -249,34 +249,20 @@ footer{}
           .header .li .a{color: white;font-size: 1.2rem;border-radius: 15px;padding: 2px 7px;}
                                 .header .li :hover{background: #2dafe2;border-radius: 15px;padding: 2px 7px;}
           @media screen and (max-width:832px){
-            .header .button{
-              display: block;
-              cursor: pointer;
+            .header .button{display: block;cursor: pointer;
             }
             .header .nav{
               width:100%;
-              /* display: none; */
-              height:0;
-              pointer-events: none;
-              overflow: hidden;
-              transition: all .5s ease;
-          
-              display: flex;
-              flex-flow: column nowrap;
-              justify-content: center;
-              align-items: center;
-            }
+              /* display: none; */ height:0;pointer-events: none;overflow: hidden;transition: all .5s ease;
+          display: flex;flex-flow: column nowrap;justify-content: center;align-items: center;}
             .header .nav.activo{
               /* display: block; */
               height:50vh;
-              pointer-events: auto;
-            }
+              pointer-events: auto;}
             .header .ul{
-              flex-direction: column;
-            }
+              flex-direction: column;}
             .header .li{
-              margin: 1rem 0;
-            }
+              margin: 1rem 0;}
           
           }
     
@@ -353,7 +339,7 @@ footer{}
     article h4{text-align: center;margin:10px;font-size: 1.4rem;}
     .slide{ width: 90%; max-width: 1200px; height: 400px;margin: 40px auto;overflow: hidden;   
       box-shadow: 0 0 0 10px #fff,0 15px 50px;position: relative;}
-    .slide-items{ display: flex;border: rgba(53, 5, 2, 0.5) 5px solid;flex-direction: row ; 
+    .slide-items{ display: flex;border: #000 5px solid;flex-direction: row ; 
       width: 350%;height: 400px;margin-left: -200%;text-align: center; padding: 40px 0;}
     .slide-items .item{ width: 100%;overflow: hidden;padding: 1em;}
     .slide-items .item img{ display: block; width: 100%;height: 91%; object-fit: cover;
@@ -365,8 +351,8 @@ footer{}
     .post{display: grid;grid-template-columns: 2fr 3fr;width: 100%;}
     .items-ref{display: flex;flex-direction: column;height: 100%;text-align: center;justify-content: space-around;align-items: center;}
     .items-ref .ref{}
-                            .items-ref .ref :hover{background: rgb(39, 76, 243);transition: .7s;}
-    .ref button{border: none;width: 200px;height: 40px;cursor: pointer;}
+                            .items-ref .ref :hover{background: rgb(3, 45, 233);transition: .7s;}
+    .ref button{border: none;width: 200px;height: 40px;cursor: pointer;background: #000d;color: #fff;}
     /* PARA EL FORMULARIO */
     .cont-form{height: 90%;text-align: center;width: fit-content;}
     .cont-form h4{margin: 20px 15px 5px 15px;font-size: 1.4rem;}
@@ -383,8 +369,8 @@ footer{}
     /* PARA EL FOOTER MAIN */
     footer{margin-top: 1EM;}
     .footer-items{}
-    .footer-items .foo-item{text-align: center;display: flex;justify-content: center;background: rgb(10,10,112);
-        background: linear-gradient(286deg, rgba(10,10,112,1) 0%, rgba(98,7,7,1) 50%, rgba(148,90,8,1) 100%);}
+    .footer-items .foo-item{text-align: center;display: flex;justify-content: center;background:#ff77
+      11;}
     .foo-item a {width: 50px;object-fit: contain;margin: 4px 15px;}
     .foo-item img{width: 50px;}
     .footer-items .foo-item-copy{text-align: center;margin: 10px 0;}
@@ -515,6 +501,46 @@ footer{}
 .servicios-cont div img{height: 300px;max-width:800px ;}
 
 }
+
+/* SERVICIO DE MESONES */
+.material{padding: 1em;display: flex;flex-direction: column;gap: 1em;align-items: center;}
+.material .img-mat {border-radius: 50%;display: block;width:280px;height: 280px;border: #000 1px solid;box-shadow: #000 1px 10px 20px 2px;}
+.material p{letter-spacing: 1px;padding: ;}
+
+.cont-mesones .seccion-meson{background: #031b1b;display: grid;grid-template-columns: 1fr;color: #fff;}
+.seccion-meson .inf-meson{padding: 1em;}
+.seccion-meson .inf-meson .img-meson{height: 250px;width: 100%;object-fit: cover;border-radius: 10px;}
+.inf-meson p{letter-spacing: 1px;padding: 1em;}
+
+/* PRUEBA PARA SERVICOS HOVER */
+/* .prueba {display: none;transition:  ;}
+.adicional{transition: ;}
+.cambio{transition: all 3s ease-in-out;;display: block;width: 100px; height: 100px;list-style: none;} */
+
+/* SERVICO DE PINTURA */
+.pintura-fondo{position: relative;height: 60vh;}
+.pintura-fondo img{height: 100%;object-fit: cover;width: 100%;right: 0;}
+.pintura-fondo div{position: absolute;width: 100%;font-size: 2rem;color: #fff;background: #031b1b99;padding: 2em;top: 50%;text-align: center;text-decoration: underline;}
+.pintura-fondo div h4{letter-spacing: 5px;font-weight: 800;}
+
+.pintura-items{display: grid;}
+.pintura-items p{letter-spacing: 1px;}
+.pintura-items .item-main{padding: 1em;}
+.pintura-items .sub-items {display: grid;}
+.sub-items img{width: 100%;object-fit: cover;box-shadow: #000 0px 0px 18px -2px;}
+.sub-items div{padding: 1em;}
+.sub-items h4{font-size: 1.2rem;width: 100%;padding:1em;text-align: center;background: #031b1b;color: #fff;letter-spacing: 3px;}
+
+.pintura-items .item-main p{padding-top: 1em;}
+.pintura-items .item-main  img{width: 100%;object-fit: cover;box-shadow: #000 0px 0px 18px -2px;}
+
+.pintura-items .cotizar{padding: 1em;background: #0002;display: flex;flex-direction: column;align-items: center;}
+.cotizar div{text-align: center;}
+.cotizar div h4{padding: .2em;letter-spacing: 2px;}
+.cotizar a button{padding: 10px 17px;margin-top: 0.5em;background-color: #ffb108;border: #ffffff 1px solid;}
+
+/* DECORACION */
+.pintura-items .subtitle{font-size: 1.3rem;letter-spacing: 2px;text-align: center;padding: 1em;text-decoration: underline;border: #0003 1px solid;box-shadow: #000 0px 5px 10px -5px;}
 
      
 
