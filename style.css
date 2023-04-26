@@ -2,7 +2,7 @@
 @media only screen and (max-width:768px){
 body{}
 
-    *{text-decoration: none;font-family: 'Poppins', sans-serif;letter-spacing: 0;}
+    *{text-decoration: none;font-family: 'Poppins', sans-serif;letter-spacing: 0;margin: 0;padding: 0;}
     /* PARA EL BOTON DE LLAMADA A WHATSAPP */
     .cont-what{position: fixed;width: 70px;height: 70px;z-index: 40;top: 90%;}
     .cont-what a{fill: #0de611bd}
@@ -167,14 +167,14 @@ body{}
   /* PARA EL SLIDE INFINITO */
   article{}
   article h4{text-align: center;margin:10px;font-size: 1.4rem;}
-  .slide{ width: 90%; max-width: 1200px; height: 400px;margin: 40px auto;overflow:hidden ;   
+  .slide{ width: 90%; max-width: 1200px; height: 400px;margin: 40px auto;overflow:scroll ;   
     box-shadow: 0 0 0 10px #fff,0 15px 50px;position: relative;}
   .slide-items{ display: flex;border: rgba(0, 0, 0, 0.815) 5px solid;flex-direction: row ; 
     width: 700%;height: 400px;margin-left: -200%;text-align: center; padding: 10px 0;}
   .slide-items .item{ width: 100%;padding: 1em 0;}
   .slide-items .item img{ display: block; width: 100%;height: 91%; object-fit: cover;
    }
-  .item:hover { transform: scale(1.1);transition: all 0.5s;}
+  /* .item:hover { transform: scale(1.1);transition: all 0.5s;} */
   .item p{font-size: 1.9rem;}
 
         /* PARA EL FORM Y LOS ATAJOS  DE SERVICIO */
@@ -336,14 +336,14 @@ footer{}
     /* PARA EL SLIDE INFINITO */
     article{}
     article h4{text-align: center;margin:10px;font-size: 1.4rem;}
-    .slide{ width: 90%; max-width: 1200px; height: 400px;margin: 40px auto;overflow: hidden;   
-      box-shadow: 0 0 0 10px #fff,0 15px 50px;position: relative;}
+    .slide{ width: 90%; max-width: 1200px; height: 400px;margin: 40px auto;   
+      box-shadow: 0 0 0 10px #fff,0 15px 50px;position: relative;overflow: scroll;}
     .slide-items{ display: flex;border: #000 5px solid;flex-direction: row ; 
       width: 350%;height: 400px;margin-left: -200%;text-align: center; padding: 40px 0;}
     .slide-items .item{ width: 100%;overflow: hidden;padding: 1em;}
     .slide-items .item img{ display: block; width: 100%;height: 91%; object-fit: cover;
      }
-    .item:hover { transform: scale(1.1);transition: all 0.5s;}
+    /* .item:hover { transform: scale(1.1);transition: all 0.5s;} */
     .item p{font-size: 1.9rem;}
     /* PARA EL FORM Y LOS ATAJOS  DE SERVICIO */
     /* PARA LOS ATAJOS */
@@ -368,8 +368,7 @@ footer{}
     /* PARA EL FOOTER MAIN */
     footer{margin-top: 1EM;}
     .footer-items{}
-    .footer-items .foo-item{text-align: center;display: flex;justify-content: center;background:#ff77
-      11;}
+    .footer-items .foo-item{text-align: center;display: flex;justify-content: center;background:#ff7711;}
     .foo-item a {width: 50px;object-fit: contain;margin: 4px 15px;}
     .foo-item img{width: 50px;}
     .footer-items .foo-item-copy{text-align: center;margin: 10px 0;}
@@ -538,8 +537,10 @@ footer{}
 .cotizar div h4{padding: .2em;letter-spacing: 2px;}
 .cotizar a button{padding: 10px 17px;margin-top: 0.5em;background-color: #ffb108;border: #ffffff 1px solid;}
 
-/* DECORACION */
+/* DECORACION     LOS BOTONES DE COTIZAR */
 .pintura-items .subtitle{font-size: 1.3rem;letter-spacing: 2px;text-align: center;padding: 1em;text-decoration: underline;border: #0003 1px solid;box-shadow: #000 0px 5px 10px -5px;}
+.mesones-cont .cotizar{padding: 1em;background: #0002;display: flex;flex-direction: column;align-items: center;}
+.subtitles{font-size: 1.3rem;padding: 1em;text-align: center;border-bottom: 4px  #ffb108 solid;width: 70%;margin: 0 auto;border-radius: 100px;}
 
      
 
